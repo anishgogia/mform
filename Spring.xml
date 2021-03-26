@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    
+  <!-- <bean id="myBCoach"
+ 		class="DipendencyInjection.Baseball">
+ 		<constructor-arg ref="fortune"/>
+   	</bean>
+   	<bean id="myTCoach"
+ 		class="DipendencyInjection.TennisCoach">
+ 		<constructor-arg ref="fortune"/>
+   	</bean>
+   	<bean id="myCCoach"
+ 		class="DipendencyInjection.Cricket">
+ 		<constructor-arg ref="fortune"/>
+   	</bean>
+  	<bean id="fortune"
+ 		class="DipendencyInjection.Fortune"></bean>  -->
+ 		
+ 		
+ 		
+ 		
+ 	<!--	<bean id="texteditor" class="Program2.TextEditor">
+<constructor-arg ref="sc"></constructor-arg>
+</bean>
+<bean id="sc" class="Program2.SpellChecker">
+</bean>  -->
+<bean id="fortune"
+	 		class="Program3.Fortune">	
+	  	</bean>
+	  	
+		<bean id="myCricketCoach" class="Program3.CricketCoach"> 
+			<constructor-arg>  
+				<ref bean="fortune"/>  
+			</constructor-arg>  
+			<constructor-arg value="anishgogia"></constructor-arg>  
+			<constructor-arg value="anish19csu029@ncuindia.edu"></constructor-arg>  
+			<constructor-arg value="20" type="Integer"></constructor-arg>  
+		</bean>  
+	  
+ 		
+    </beans>

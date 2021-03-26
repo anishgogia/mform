@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <bean id="BCoach1" class="Objectreference.BaseballCoach">
+    <constructor-arg  name="ifortune" ref="fortune"/>
+    <constructor-arg index="1" value="anish"/>
+    <constructor-arg index="2" value="anish3@gmail.com"/>
+    <constructor-arg index="3" value="19csu029"/>
+    <constructor-arg name="address" ref="address1"/>
+    </bean>
+ 
+    <bean id="BCoach2" class="Objectreference.BaseballCoach">
+        <constructor-arg  name="ifortune" ref="fortune"/>
+        <constructor-arg index="1" value="sahil"/>
+        <constructor-arg index="2" value="sahil@gmail.com"/>
+        <constructor-arg index="3" value="1554"/>
+        <constructor-arg name="address" ref="address2"/>
+    </bean>
+ 
+ 
+    <bean id="fortune" class="Objectreference.Fortune"/>
+ 
+    <bean id="address1" class="Objectreference.Address">
+        <constructor-arg index="0" value="Abcd"/>
+        <constructor-arg index="1" value="Delhi"/>
+        <constructor-arg index="2" value="Delhi"/>
+        <constructor-arg index="3" value="121007"/>
+    </bean>
+    <bean id="address2" class="Objectreference.Address">
+        <constructor-arg index="0" value="Sector-7"/>
+        <constructor-arg index="1" value="faridabad"/>
+        <constructor-arg index="2" value="faridavad"/>
+        <constructor-arg index="3" value="121006"/>
+    </bean>
+</beans>
